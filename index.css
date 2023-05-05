@@ -1,0 +1,127 @@
+.header_nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_nav > * {
+    margin: 1em;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+}
+header img {
+    width:  3em;
+    height: 3em;
+}
+header h1 {
+    font-size: 2em;
+    margin: 0 0.5em;
+    margin-left: 0.5em;
+}
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+nav :last-child {
+    margin-right: 1em;
+}
+nav :not(:last-child)::after {
+    content: "";
+    position: relative;
+    right: 0;
+    margin: 0 0.5em;
+    width: 0;
+    border: 0.1em solid gray;
+    height: 2em;
+}
+nav * {
+    text-decoration: none;
+    color: #0077ff;
+}
+.feature {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.feature img {
+    height:  5em;
+    margin: 1em;
+}
+.feature * {
+    text-align: center;
+}
+.row {
+    margin-bottom: 2em;
+}
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0;
+    background-color: rgb(233, 233, 233);
+}
+footer > :not(:last-child)::after {
+    content: "";
+    position: relative;
+    right: -8vw;
+    margin: 0 0.5em;
+    width: 0;
+    border: 0.1em solid gray;
+    height: 2em;
+}
+footer > a {
+    text-decoration: none;
+    color: #0077ff;
+}
+.hero {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero img {
+    height: 100%;
+}
+#handles {
+    left: 0;
+    top: 8em;
+    width: 100%;
+    position: relative;
+}
+#handles img {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}
+#handles :nth-child(1) {
+    float: left;
+}
+#handles :nth-child(2) {
+    float: right;
+    transform: scaleX(-1);
+}
+#about_us img {
+    width:  20em;
+    height: 20em;
+    margin: 1em;
+}
+.slide {
+    margin: 5em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.slide img {
+    width:  5em;
+    height: 5em;
+    margin: 1em;
+}
